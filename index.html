@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-4J35NNWX2Z"></script>
     <script>
     window.dataLayer = window.dataLayer || [];
@@ -12,8 +13,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="styles.css">
     <title>Raid Boss Spawn Countdown</title>
-    <!-- Google tag (gtag.js) -->
-    
+    <script src="block.js"></script>
 </head>
 <body>
     <div class="form-inline">
@@ -34,8 +34,8 @@
     </div>
 <table>
 </table>
-<p>This site shows countdown of spawn time on <a href="https://seasons.l2reborn.org/raidbosses-map/">l2reborn server 30x</a>. It saves 1 cookie which stores table view setting.</p>
-<p>Maximum spawn time setting filters by the maximum number of hours until RB spawns.</p>
+<p id="p1">This site shows countdown of spawn time on <a href="https://seasons.l2reborn.org/raidbosses-map/">l2reborn server 30x</a>. It saves 1 cookie which stores table view setting.</p>
+<p id="p2">Maximum spawn time setting filters by the maximum number of hours until RB spawns.</p>
 </body>
 <script src="RB_DATA.js"></script>
 <script src="script.js?v=<?php echo time(); ?>"></script>

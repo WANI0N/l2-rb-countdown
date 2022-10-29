@@ -207,6 +207,13 @@ function generateTable(table, data) {
 }
 
 function refreshTable(){
+    if (!enableWebsite){
+        let p1 = document.getElementById('p1')
+        let p2 = document.getElementById('p2')
+        p1.innerHTML = "This website is not available in Putin's Russia."
+        p2.innerHTML = 'Slava Ukraini!'
+        return
+    }
     let rbDataRealTimeHashMap = {}
     fetch('https://seasons.l2reborn.org/wp-content/uploads/raids/raids.json', {cache: "no-cache"})
         .then((response) => response.json())
